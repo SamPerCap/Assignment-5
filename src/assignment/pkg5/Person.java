@@ -15,10 +15,9 @@ public class Person {
     public String name;
     public String email;
 
-    public Person(int id, String name/*, String email*/) {
+    public Person(int id, String name) {
         this.id = id;
         this.name = name;
-        //this.email = email;
     }
 
     public int getId() {

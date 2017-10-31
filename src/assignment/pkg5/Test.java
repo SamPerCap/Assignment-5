@@ -17,20 +17,15 @@ abstract class Test {
         
     ArrayList<Person> personList = new ArrayList<>();
     
-   Person  han = new Person(40, "Han");
-    han.setEmail("han@easv.dk"); 
+   Student han = new Student(40, "Han","\t\t\t\tCS");
+   han.setEmail("han@easv.dk");
     
-    /*man.addSubject("Programming");
-    man.addSubject("Medicine");
-    man.addSubject("CoffeeMachine");
-    man.addSubject("Become part-time Transformer");
-    man.addSubject("Being DonkeyMonkey");*/
     
-    Person eo = new Person(69, "Eo");
-    eo.setEmail("eo@easv.dk");
+    Student eo = new Student(69, "Eo","\t\t\t\tIT");
+    eo.setEmail("eo@vsae.kd");
     
-    Person lo = new Person(1, "Lo");
-    lo.setEmail("lo@easv.dk");
+    Student lo = new Student(1, "Lo","\t\t\t\tSF");
+    lo.setEmail("lo@psdq.mq");
     
     Teacher superteacher = new Teacher(9999 , "Over", "O");
     superteacher.setEmail("ITSOVER@9999.dk");
@@ -54,7 +49,7 @@ abstract class Test {
     personList.add(superteacher);
     
     
-    System.out.println("ID\t"+"NAME\t"+"EMAIL\t\t"+"INITIALS\t"+"MAIN");
+    System.out.println("ID\t"+"NAME\t"+"EMAIL\t\t"+"INITIALS\t"+"MAIN"+"\t\tEducation\t"+"Avg.Grade");
     
              for(Person person : personList) {
                  System.out.println(person);
