@@ -17,15 +17,21 @@ abstract class Test {
         
     ArrayList<Person> personList = new ArrayList<>();
     
-   Student han = new Student(40, "Han","\t\t\t\tCS");
+   Student han = new Student(40, "Han","\t\t\t\t\tCS");
    han.setEmail("han@easv.dk");
+   han.addGrade(new GradeInfo("CS", 2));
+   han.addGrade(new GradeInfo("CS", 9));
     
-    
-    Student eo = new Student(69, "Eo","\t\t\t\tIT");
+    Student eo = new Student(69, "Eo","\t\t\t\t\tIT");
     eo.setEmail("eo@vsae.kd");
+    eo.addGrade(new GradeInfo("IT", 8));
+    eo.addGrade(new GradeInfo("IT", 9));
     
-    Student lo = new Student(1, "Lo","\t\t\t\tSF");
+    Student lo = new Student(1, "Lo","\t\t\t\t\tSF");
     lo.setEmail("lo@psdq.mq");
+    lo.addGrade(new GradeInfo("SF", 1));
+    lo.addGrade(new GradeInfo("SF", 7));
+    
     
     Teacher superteacher = new Teacher(9999 , "Over", "O");
     superteacher.setEmail("ITSOVER@9999.dk");

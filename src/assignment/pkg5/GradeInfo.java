@@ -11,36 +11,31 @@ import java.util.ArrayList;
  *
  * @author Samuel
  */
-public class GradeInfo extends Student {
+public class GradeInfo{
     String subject;
     int grade;
-    
-    public ArrayList<String> aSubjectList = new ArrayList<>();
-    int aGradeList[] = {1,8,2,2,0,4,9,6};
-    
+      
     
     public GradeInfo(String subject, int grade) {
         
-        
-        super(id, name, education);
+        this.subject=subject;
+        this.grade=grade;
     }
     public String getSubject(){
         
         
-        if(0 < aSubjectList.size()) {
-            return aSubjectList.get(0);
+       return subject;
             
-        }
-        return null;}
+     }
     public int getGrade(){
              
-        return aGradeList[1];
+        return grade;
     }
     
     
     @Override
     public String toString() {
-        return super.toString()+"\t"; //To change body of generated methods, choose Tools | Templates.
+        return "GradeInfo{" + "subject=" + subject + ", grade=" + grade + '}';  //To change body of generated methods, choose Tools | Templates.
     }
     
 }
